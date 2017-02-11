@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Viewer:</strong>
+  <%= @document.viewer %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @document.entry %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @document.patient %>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

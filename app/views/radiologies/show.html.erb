@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Viewer:</strong>
+  <%= @radiology.viewer %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @radiology.entry %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @radiology.patient %>
+</p>
+
+<%= link_to 'Edit', edit_radiology_path(@radiology) %> |
+<%= link_to 'Back', radiologies_path %>

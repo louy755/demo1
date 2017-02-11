@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Labs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Viewer</th>
+      <th>Item</th>
+      <th>Value</th>
+      <th>Timestamp</th>
+      <th>Entry</th>
+      <th>Item</th>
+      <th>Value</th>
+      <th>Timestamp</th>
+      <th>Patient</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @labs.each do |lab| %>
+      <tr>
+        <td><%= lab.viewer %></td>
+        <td><%= lab.item %></td>
+        <td><%= lab.value %></td>
+        <td><%= lab.timestamp %></td>
+        <td><%= lab.entry %></td>
+        <td><%= lab.item %></td>
+        <td><%= lab.value %></td>
+        <td><%= lab.timestamp %></td>
+        <td><%= lab.patient %></td>
+        <td><%= link_to 'Show', lab %></td>
+        <td><%= link_to 'Edit', edit_lab_path(lab) %></td>
+        <td><%= link_to 'Destroy', lab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lab', new_lab_path %>

@@ -1,0 +1,82 @@
+<%= form_for(patient) do |f| %>
+  <% if patient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+      <% patient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bp %>
+    <%= f.text_field :bp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pulse %>
+    <%= f.text_field :pulse %>
+  </div>
+
+  <div class="field">
+    <%= f.label :temp %>
+    <%= f.text_field :temp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rr %>
+    <%= f.text_field :rr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :time %>
+    <%= f.datetime_select :time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :minutes %>
+    <%= f.text_field :minutes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hours %>
+    <%= f.text_field :hours %>
+  </div>
+
+  <div class="field">
+    <%= f.label :days %>
+    <%= f.text_field :days %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weeks %>
+    <%= f.text_field :weeks %>
+  </div>
+
+  <div class="field">
+    <%= f.label :months %>
+    <%= f.text_field :months %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

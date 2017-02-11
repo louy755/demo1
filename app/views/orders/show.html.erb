@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Viewer:</strong>
+  <%= @order.viewer %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @order.item %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @order.value %>
+</p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @order.timestamp %>
+</p>
+
+<p>
+  <strong>Entery:</strong>
+  <%= @order.entery %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @order.order %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @order.status %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @order.patient %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

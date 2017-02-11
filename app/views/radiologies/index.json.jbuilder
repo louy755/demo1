@@ -1,0 +1,1 @@
+json.array! @radiologies, partial: 'radiologies/radiology', as: :radiology
